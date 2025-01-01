@@ -4,7 +4,7 @@ description: CyanPrint Template to initialize Nix Flake project with optional cu
 project: https://github.com/AtomiCloud/ketone.nix-init
 source: https://github.com/AtomiCloud/ketone.nix-init
 email: admin@atomi.cloud
-tags: ["atomicloud","nix"]
+tags: ['atomicloud', 'nix']
 readme: cyan/README.MD
-processors: ["cyan/default"]
+processors: ['cyan/default']
 plugins: []
