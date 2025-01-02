@@ -9,7 +9,7 @@ export async function normalPrompt(i: IInquirer, d: IDeterminism): Promise<Cyan>
   const pc = await i.confirm('Include Pre-Commit Hooks');
 
   const folder = standard ? 'templates/normal/standard' : 'templates/normal/empty';
-  const folderExclude = pc ? [] : ['pre-commit.nix', 'fmt.nix'];
+  const folderExclude = pc ? [] : ['**/pre-commit.nix', '**/fmt.nix'];
   const precommit = pc ? 'templates/normal/with-pc' : 'templates/normal/without-pc';
 
   return {
