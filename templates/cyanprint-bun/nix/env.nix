@@ -23,12 +23,9 @@ with packages;
   lint = [
     # core
     treefmt
-    gitlint
     shellcheck
-    sg
   ];
 
   releaser = [
-    sg
   ];
 }
