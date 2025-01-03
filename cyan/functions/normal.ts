@@ -5,8 +5,8 @@ export async function normalPrompt(i: IInquirer, d: IDeterminism): Promise<Cyan>
 
   vars.description = await i.text('Description', 'Description of this Project');
 
-  const standard = await i.confirm('Include default binaries');
-  const pc = await i.confirm('Include Pre-Commit Hooks');
+  const standard = await i.confirm('Include default binaries (y/n)');
+  const pc = await i.confirm('Include Pre-Commit Hooks (y/n)');
 
   const folder = standard ? 'templates/normal/standard' : 'templates/normal/empty';
   const folderExclude = pc ? [] : ['**/pre-commit.nix', '**/fmt.nix'];
