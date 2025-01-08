@@ -14,6 +14,9 @@ let
       shfmt = {
         enable = true;
       };
+      actionlint = {
+        enable = true;
+      };
     };
 
 

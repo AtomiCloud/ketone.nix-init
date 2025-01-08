@@ -14,6 +14,12 @@ let
       shfmt = {
         enable = true;
       };
+      csharpier = {
+        enable = true;
+      };
+      actionlint = {
+        enable = true;
+      };
     };
 
 

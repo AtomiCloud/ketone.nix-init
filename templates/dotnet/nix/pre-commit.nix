@@ -17,16 +17,6 @@ pre-commit-lib.run {
       enable = false;
     };
 
-    a-dotnet-fmt-app = {
-      enable = true;
-      name = "Format .NET 'App' Project";
-      description = "Run formatter for .NET Project 'App'";
-      entry = "${packages.dotnet}/bin/dotnet format whitespace --no-restore -v d ./App/App.csproj";
-      language = "system";
-      pass_filenames = false;
-      files = "^App/.*\\.cs$";
-    };
-
     a-dotnet-lint-app = {
       enable = true;
       name = "Lint .NET 'App' Project";
