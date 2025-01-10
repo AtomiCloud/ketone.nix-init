@@ -19,7 +19,7 @@ with env;
     inherit shellHook;
   };
   releaser = pkgs.mkShell {
-    buildInputs = system ++ main ++ lint + releaser;
+    buildInputs = system ++ main ++ lint ++ releaser;
     inherit shellHook;
   };
 }
