@@ -5,21 +5,11 @@ let
 
     # enable or disable formatters, see https://github.com/numtide/treefmt-nix#supported-programs
     programs = {
-      nixpkgs-fmt = {
-        enable = true;
-      };
-      prettier = {
-        enable = true;
-      };
-      shfmt = {
-        enable = true;
-      };
-      csharpier = {
-        enable = true;
-      };
-      actionlint = {
-        enable = true;
-      };
+      nixpkgs-fmt.enable = true;
+      prettier.enable = true;
+      shfmt.enable = true;
+      csharpier.enable = true;
+      actionlint.enable = true;
     };
 
 
