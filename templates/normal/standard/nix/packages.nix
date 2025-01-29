@@ -6,6 +6,7 @@ let
       with atomi;
       {
         inherit
+          atomiutils
           sg
           pls;
       }
@@ -17,9 +18,7 @@ let
     nix-2411 = (
       with pkgs-2411;
       {
-        yq = yq-go;
         inherit
-          atomiutils
           git
           infisical
           treefmt

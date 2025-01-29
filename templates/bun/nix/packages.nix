@@ -5,6 +5,16 @@ let
       with atomi;
       {
         inherit
+          /*
+          <%= if (infra) { %>
+          */
+          #infra
+          infrautils
+          infralint
+          /*
+          <%= } %>
+          */
+          atomiutils
           sg
           pls;
       }
@@ -18,10 +28,7 @@ let
       {
 
         inherit
-
           # standard
-          atomiutils
-
           git
           infisical
 
@@ -31,16 +38,6 @@ let
 
           # language
           bun
-
-          /*
-          <%= if (infra) { %>
-          */
-          #infra
-          infrautils
-          infralint
-          /*
-          <%= } %>
-          */
           ;
       }
     );

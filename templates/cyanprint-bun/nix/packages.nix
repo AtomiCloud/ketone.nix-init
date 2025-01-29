@@ -6,6 +6,7 @@ let
       with atomi;
       {
         inherit
+          atomiutils
           pls;
       }
     );
@@ -18,7 +19,6 @@ let
       {
 
         inherit
-          atomiutils
 
           git
 

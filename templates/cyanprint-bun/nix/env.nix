@@ -20,7 +20,4 @@ with packages;
     treefmt
     shellcheck
   ];
-
-  releaser = [
-  ];
 }
