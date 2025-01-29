@@ -76,7 +76,7 @@ pre-commit-lib.run {
     a-enforce-exec = {
       enable = true;
       name = "Enforce Shell Script executable";
-      entry = "${packages.coreutils}/bin/chmod +x";
+      entry = "${packages.atomiutils}/bin/chmod +x";
       files = ".*sh$";
       language = "system";
       pass_filenames = true;
@@ -88,7 +88,7 @@ pre-commit-lib.run {
     a-hadolint = {
       enable = true;
       name = "Docker Linter";
-      entry = "${packages.hadolint}/bin/hadolint";
+      entry = "${packages.infralint}/bin/hadolint";
       files = ".*Dockerfile$";
       language = "system";
       pass_filenames = true;
@@ -97,7 +97,7 @@ pre-commit-lib.run {
     a-helm-docs = {
       enable = true;
       name = "Helm Docs";
-      entry = "${packages.helm-docs}/bin/helm-docs";
+      entry = "${packages.infralint}/bin/helm-docs";
       files = ".*";
       language = "system";
       pass_filenames = false;

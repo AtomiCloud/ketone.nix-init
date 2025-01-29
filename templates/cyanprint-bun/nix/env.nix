@@ -2,12 +2,7 @@
 with packages;
 {
   system = [
-    coreutils
-    findutils
-    gnugrep
-    gnused
-    jq
-    yq
+    atomiutils
   ];
 
   dev = [

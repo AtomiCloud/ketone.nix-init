@@ -16,15 +16,9 @@ let
     nix-2411 = (
       with pkgs-2411;
       {
-        yq = yq-go;
 
         inherit
-          coreutils
-          findutils
-          gnugrep
-          gnused
-          jq
-
+          atomiutils
 
           git
 

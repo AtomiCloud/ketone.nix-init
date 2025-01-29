@@ -19,12 +19,7 @@ let
       {
         yq = yq-go;
         inherit
-          coreutils
-          findutils
-          gnugrep
-          gnused
-          jq
-          bash
+          atomiutils
           git
           infisical
           treefmt

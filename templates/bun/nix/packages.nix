@@ -17,28 +17,12 @@ let
       with pkgs-2411;
       {
 
-        yq = yq-go;
-
-        /*
-        <%= if (infra) { %>
-        */
-        helm = kubernetes-helm;
-        /*
-        <%= } %>
-        */
-
         inherit
 
           # standard
-          coreutils
-          findutils
-          gnugrep
-          gnused
-          jq
-          bash
+          atomiutils
 
           git
-          curl
           infisical
 
           treefmt
@@ -52,13 +36,8 @@ let
           <%= if (infra) { %>
           */
           #infra
-          kubectl
-          k3d
-
-          docker
-          hadolint
-
-          helm-docs
+          infrautils
+          infralint
           /*
           <%= } %>
           */

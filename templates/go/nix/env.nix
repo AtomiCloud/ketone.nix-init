@@ -2,14 +2,7 @@
 with packages;
 {
   system = [
-    coreutils
-    findutils
-    gnugrep
-    gnused
-    bash
-    jq
-    yq
-    curl
+    atomiutils
   ];
 
   dev = [
@@ -22,9 +15,7 @@ with packages;
     <%= if (infra) { %>
   */
   infra = [
-    kubectl
-    k3d
-    helm
+    infrautils
   ];
   /*
     <%= } %>
@@ -49,8 +40,7 @@ with packages;
     /*
       <%= if (infra) { %>
     */
-    hadolint
-    helm-docs
+    infralint
     /*
       <%= } %>
     */
