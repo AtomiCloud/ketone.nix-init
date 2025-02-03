@@ -7,6 +7,7 @@ let
       {
         inherit
           atomiutils
+          sg
           pls;
       }
     );
