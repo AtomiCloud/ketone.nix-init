@@ -7,24 +7,24 @@ pre-commit-lib.run {
     # formatter
     treefmt = {
       enable = true;
+      package = formatter;
       excludes = [
         ".*(Changelog|README|CommitConventions).+(MD|md)"
       ];
     };
 
     # linters From https://github.com/cachix/pre-commit-hooks.nix
-    shellcheck = {
-      enable = false;
-    };
+    shellcheck.enable = false;
 
-    a-dotnet-lint-app = {
+    # custom precommits 
+    a-dotnet-lint = {
       enable = true;
-      name = "Lint .NET 'App' Project";
-      description = "Run formatter for .NET Project 'App'";
-      entry = "${packages.dotnet}/bin/dotnet format style --no-restore --severity info --verify-no-changes -v d ./App/App.csproj";
+      name = "Lint .NET";
+      description = "Run linter for .NET Projects'";
+      entry = "${packages.dotnetlint}/bin/dotnetlint";
       language = "system";
       pass_filenames = false;
-      files = "^App/.*\\.cs$";
+      files = "^.*\\.cs$";
     };
 
     a-infisical = {
@@ -109,9 +109,4 @@ pre-commit-lib.run {
 
   };
 
-  settings = {
-    treefmt = {
-      package = formatter;
-    };
-  };
 }

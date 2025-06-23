@@ -13,10 +13,9 @@ pre-commit-lib.run {
     };
 
     # linters From https://github.com/cachix/pre-commit-hooks.nix
-    shellcheck = {
-      enable = false;
-    };
+    shellcheck.enable = false;
 
+    # custom precommits 
     a-infisical = {
       enable = true;
       name = "Secrets Scanning";

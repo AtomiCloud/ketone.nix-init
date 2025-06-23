@@ -7,15 +7,15 @@ pre-commit-lib.run {
     # formatter
     treefmt = {
       enable = true;
+      package = formatter;
       excludes = [
         ".*(Changelog|README|CommitConventions).+(MD|md)"
       ];
     };
     # linters From https://github.com/cachix/pre-commit-hooks.nix
-    shellcheck = {
-      enable = false;
-    };
+    shellcheck.enable = false;
 
+    # custom precommits 
     a-infisical = {
       enable = true;
       name = "Secrets Scanning (Past Commits)";
@@ -107,11 +107,5 @@ pre-commit-lib.run {
       <%= } %>
     */
 
-  };
-
-  settings = {
-    treefmt = {
-      package = formatter;
-    };
   };
 }

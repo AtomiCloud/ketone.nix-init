@@ -1,12 +1,12 @@
-import { Cyan, GlobType, IDeterminism, IInquirer } from '@atomicloud/cyan-sdk';
+import { type Cyan, GlobType, type IDeterminism, type IInquirer } from '@atomicloud/cyan-sdk';
 
 export async function normalPrompt(i: IInquirer, d: IDeterminism): Promise<Cyan> {
   const vars: Record<string, string> = { description: '' };
 
   vars.description = await i.text('Description', 'Description of this Project');
 
-  const standard = await i.confirm('Include default binaries (y/n)');
-  const pc = await i.confirm('Include Pre-Commit Hooks (y/n)');
+  const standard = await i.confirm('Include default binaries (y/n)', 'standard-binary');
+  const pc = await i.confirm('Include Pre-Commit Hooks (y/n)', 'pre-commit');
 
   const folder = standard ? 'templates/normal/standard' : 'templates/normal/empty';
   const folderExclude = pc ? [] : ['**/pre-commit.nix', '**/fmt.nix'];

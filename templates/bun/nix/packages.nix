@@ -1,4 +1,4 @@
-{ pkgs, atomi, pkgs-2411 }:
+{ pkgs, atomi, pkgs-2505, pkgs-unstable }:
 let
   all = {
     atomipkgs = (
@@ -20,11 +20,11 @@ let
       }
     );
     nix-unstable = (
-      with pkgs;
+      with pkgs-unstable;
       { }
     );
-    nix-2411 = (
-      with pkgs-2411;
+    nix-2505 = (
+      with pkgs-2505;
       {
 
         inherit
@@ -35,6 +35,7 @@ let
           treefmt
           gitlint
           shellcheck
+          biome
 
           # language
           bun
@@ -45,7 +46,7 @@ let
   };
 in
 with all;
-nix-2411 //
+nix-2505 //
 nix-unstable //
 atomipkgs
 

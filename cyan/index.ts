@@ -1,5 +1,4 @@
-import { Cyan, GlobType, StartTemplateWithLambda } from '@atomicloud/cyan-sdk';
-import { Glob } from 'bun';
+import { type Cyan, GlobType, StartTemplateWithLambda } from '@atomicloud/cyan-sdk';
 import { normalPrompt } from './functions/normal';
 import { atomiPrompt } from './functions/atomi';
 
@@ -7,12 +6,14 @@ StartTemplateWithLambda(async (i, d): Promise<Cyan> => {
   const type = await i.select(
     'Which type of Nix do you want to initialize?',
     ['Standard', 'CyanPrint Bun', 'AtomiCloud Suite'],
+    'init-type',
     'For default configuration, please choose standard.',
   );
 
-  if (type == 'Standard') {
+  if (type === 'Standard') {
     return await normalPrompt(i, d);
-  } else if (type == 'CyanPrint Bun') {
+  }
+  if (type === 'CyanPrint Bun') {
     return {
       plugins: [],
       processors: [
@@ -35,7 +36,6 @@ StartTemplateWithLambda(async (i, d): Promise<Cyan> => {
         },
       ],
     } as Cyan;
-  } else {
-    return await atomiPrompt(i, d);
   }
+  return await atomiPrompt(i, d);
 });

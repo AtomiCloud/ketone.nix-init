@@ -1,9 +1,11 @@
-{ pkgs, atomi, pkgs-2411 }:
+{ pkgs, atomi, pkgs-2505, pkgs-unstable }:
 let
   all = {
     atomipkgs = (
       with atomi;
       {
+        dotnetlint = atomi.dotnetlint.override { dotnetPackage = nix-2505.dotnet; };
+
         inherit
 
           /*
@@ -21,13 +23,13 @@ let
       }
     );
     nix-unstable = (
-      with pkgs;
+      with pkgs-unstable;
       { }
     );
-    nix-2411 = (
-      with pkgs-2411;
+    nix-2505 = (
+      with pkgs-2505;
       {
-        dotnet = dotnet-sdk_9;
+        dotnet = dotnet-sdk;
         inherit
 
           # standard
@@ -44,7 +46,7 @@ let
   };
 in
 with all;
-nix-2411 //
+nix-2505 //
 nix-unstable //
 atomipkgs
 

@@ -7,23 +7,23 @@ pre-commit-lib.run {
     # formatter
     treefmt = {
       enable = true;
+      package = formatter;
       excludes = [
         ".*(Changelog|README|CommitConventions).+(MD|md)"
       ];
     };
 
     # linters From https://github.com/cachix/pre-commit-hooks.nix
-    shellcheck = {
-      enable = false;
-    };
+    shellcheck.enable = false;
 
-    a-oxc-lint = {
+    # custom precommits 
+    a-biome = {
       enable = true;
-      name = "Oxidation Linter";
-      description = "OXC Javascript Linter";
-      entry = "${packages.bun}/bin/bun ./node_modules/.bin/oxlint";
+      name = "Biome Lint";
+      entry = "${packages.biome}/bin/biome lint --write";
+      files = ".*ts$";
       language = "system";
-      pass_filenames = false;
+      pass_filenames = true;
     };
 
     a-infisical = {
@@ -106,11 +106,5 @@ pre-commit-lib.run {
       <%= } %>
     */
 
-  };
-
-  settings = {
-    treefmt = {
-      package = formatter;
-    };
   };
 }
