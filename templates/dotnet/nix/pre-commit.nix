@@ -103,6 +103,16 @@ pre-commit-lib.run {
       language = "system";
       pass_filenames = false;
     };
+
+    a-helm-lint = {
+      enable = true;
+      name = "Lint Helm Charts";
+      description = "Lints helm charts";
+      entry = "${packages.helmlint}/bin/helmlint";
+      files = ".*";
+      language = "system";
+      pass_filenames = false;
+    };
     /*
       <%= } %>
     */

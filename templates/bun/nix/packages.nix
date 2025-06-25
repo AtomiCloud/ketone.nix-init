@@ -3,7 +3,15 @@ let
   all = {
     atomipkgs = (
       with atomi;
-      {
+      rec {
+        /*
+          <%= if (infra) { %>
+          */
+        helmlint = atomi.helmlint.override { helmPackage = infrautils; };
+        /*
+          <%= } %>
+          */
+
         inherit
           /*
           <%= if (infra) { %>

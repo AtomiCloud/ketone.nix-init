@@ -1,11 +1,17 @@
 { pkgs, atomi, pkgs-2505, pkgs-unstable }:
 let
-  all = {
+  all = rec {
     atomipkgs = (
       with atomi;
-      {
+      rec {
         dotnetlint = atomi.dotnetlint.override { dotnetPackage = nix-2505.dotnet; };
-
+        /*
+        <%= if (infra) { %>
+        */
+        helmlint = atomi.helmlint.override { helmPackage = infrautils; };
+        /*
+        <%= } %>
+        */
         inherit
 
           /*

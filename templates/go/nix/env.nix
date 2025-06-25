@@ -41,6 +41,7 @@ with packages;
       <%= if (infra) { %>
     */
     infralint
+    helmlint
     /*
       <%= } %>
     */

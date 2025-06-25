@@ -1,9 +1,16 @@
 { pkgs, atomi, pkgs-2505, pkgs-unstable }:
 let
-  all = {
+  all = rec {
     atomipkgs = (
       with atomi;
-      {
+      rec {
+        /*
+        <%= if (infra) { %>
+        */
+        helmlint = atomi.helmlint.override { helmPackage = infrautils; };
+        /*
+        <%= } %>
+        */
         inherit
 
           /*
