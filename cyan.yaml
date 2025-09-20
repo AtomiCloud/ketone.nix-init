@@ -2,9 +2,9 @@ username: atomi
 name: nix-init
 description: CyanPrint Template to initialize Nix Flake project with optional custom presets
 project: https://github.com/AtomiCloud/ketone.nix-init
-source: https://github.com/AtomiCloud/ketone.nix-init
+source: https://github.com/AtomiCloud/ketone.nix-init.git
 email: admin@atomi.cloud
-tags: ['atomicloud', 'nix']
+tags: ['atomi']
 readme: cyan/README.MD
 processors: ['cyan/default']
 plugins: []

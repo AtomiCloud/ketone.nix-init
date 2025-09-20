@@ -1,0 +1,106 @@
+atomi/cyan:
+  active: true
+  history:
+    - version: 10
+      time: 2025-09-20T07:43:00.729207Z
+      answers:
+        atomi-cyan/template-name:
+          type: String
+          value: nix-init
+        atomi-cyan/template-description:
+          type: String
+          value: CyanPrint Template to initialize Nix Flake project with optional custom presets
+        atomi-cyan/platform:
+          type: String
+          value: ketone
+        atomi-cyan/service:
+          type: String
+          value: nix-init
+      deterministic_states: {}
+cyan/new:
+  active: true
+  history:
+    - version: 12
+      time: 2025-09-20T04:16:50.929573Z
+      answers:
+        cyan/new/more-tags/0:
+          type: String
+          value: yes
+        cyan/new/email:
+          type: String
+          value: admin@atomi.cloud
+        cyan/new/create:
+          type: String
+          value: Template
+        cyan/new/description:
+          type: String
+          value: CyanPrint Template to initialize Nix Flake project with optional custom presets
+        cyan/new/processor/0:
+          type: String
+          value: cyan/default
+        cyan/new/more-plugins/0:
+          type: String
+          value: no
+        cyan/new/more-processors/1:
+          type: String
+          value: no
+        cyan/new/project:
+          type: String
+          value: https://github.com/AtomiCloud/ketone.nix-init
+        cyan/new/language:
+          type: String
+          value: Typescript
+        cyan/new/more-processors/0:
+          type: String
+          value: yes
+        cyan/new/username:
+          type: String
+          value: atomi
+        cyan/new/more-tags/1:
+          type: String
+          value: no
+        cyan/new/source:
+          type: String
+          value: https://github.com/AtomiCloud/ketone.nix-init.git
+        cyan/new/tag/0:
+          type: String
+          value: atomi
+        cyan/new/name:
+          type: String
+          value: nix-init
+      deterministic_states: {}
+atomi/nix-init:
+  active: true
+  history:
+    - version: 13
+      time: 2025-09-20T04:17:58.544143Z
+      answers:
+        init-type:
+          type: String
+          value: CyanPrint Bun
+      deterministic_states: {}
+atomi/workspace:
+  active: true
+  history:
+    - version: 20
+      time: 2025-09-20T04:18:17.086559Z
+      answers:
+        atomi/workspace/platform:
+          type: String
+          value: ketone
+        atomi/workspace/enable-docker:
+          type: Bool
+          value: true
+        atomi/workspace/enable-secret:
+          type: Bool
+          value: false
+        atomi/workspace/enable-helm:
+          type: Bool
+          value: false
+        atomi/workspace/service:
+          type: String
+          value: nix-init
+        atomi/workspace/runtime:
+          type: String
+          value: Bun
+      deterministic_states: {}

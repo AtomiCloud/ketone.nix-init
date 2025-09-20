@@ -7,6 +7,7 @@ let
       {
         inherit
           atomiutils
+          cyanprint
           sg
           pls;
       }
@@ -20,12 +21,13 @@ let
       {
 
         inherit
+
           git
 
           infisical
           bun
-
           biome
+
           treefmt
           shellcheck
           ;

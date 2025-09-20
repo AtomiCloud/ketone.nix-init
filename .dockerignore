@@ -2,6 +2,7 @@ nix
 examples
 scripts
 .github
+.envrc
 flake.lock
 flake.nix
 Taskfile.yaml
@@ -18,4 +19,5 @@ README.MD
 **/bin/
 **/obj/
 **/node_modules/
+**/env.
 
