@@ -6,7 +6,7 @@
 
     # registry
     nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
-    nixpkgs-2505.url = "nixpkgs/nixos-25.05";
+    nixpkgs-2511.url = "nixpkgs/nixos-25.11";
     atomipkgs.url = "github:AtomiCloud/nix-registry/v2";
   };
   outputs =
@@ -17,7 +17,7 @@
 
       # registries
     , atomipkgs
-    , nixpkgs-2505
+    , nixpkgs-2511
     , nixpkgs-unstable
 
     } @inputs:
@@ -25,15 +25,15 @@
       (
         system:
         let
-          pkgs-2505 = nixpkgs-2505.legacyPackages.${system};
+          pkgs-2511 = nixpkgs-2511.legacyPackages.${system};
           pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
           atomi = atomipkgs.packages.${system};
         in
-        let pkgs = pkgs-2505; in
+        let pkgs = pkgs-2511; in
         with rec {
           packages = import ./nix/packages.nix
             {
-              inherit pkgs pkgs-2505 pkgs-unstable atomi;
+              inherit pkgs pkgs-2511 pkgs-unstable atomi;
             };
           env = import ./nix/env.nix {
             inherit pkgs packages;

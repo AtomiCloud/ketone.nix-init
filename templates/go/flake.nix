@@ -9,7 +9,7 @@
 
     # registry
     nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
-    nixpkgs-2505.url = "nixpkgs/nixos-25.05";
+    nixpkgs-2511.url = "nixpkgs/nixos-25.11";
     atomipkgs.url = "github:AtomiCloud/nix-registry/v2";
   };
   outputs =
@@ -22,7 +22,7 @@
 
       # registries
     , atomipkgs
-    , nixpkgs-2505
+    , nixpkgs-2511
     , nixpkgs-unstable
 
     } @inputs:
@@ -30,11 +30,11 @@
       (system:
       let
         pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
-        pkgs-2505 = nixpkgs-2505.legacyPackages.${system};
+        pkgs-2511 = nixpkgs-2511.legacyPackages.${system};
         atomi = atomipkgs.packages.${system};
         pre-commit-lib = pre-commit-hooks.lib.${system};
       in
-      let pkgs = pkgs-2505; in
+      let pkgs = pkgs-2511; in
       let
         out = rec {
           pre-commit = import ./nix/pre-commit.nix {
@@ -44,7 +44,7 @@
             inherit treefmt-nix pkgs;
           };
           packages = import ./nix/packages.nix {
-            inherit pkgs atomi pkgs-2505 pkgs-unstable;
+            inherit pkgs atomi pkgs-2511 pkgs-unstable;
           };
           env = import ./nix/env.nix {
             inherit pkgs packages;

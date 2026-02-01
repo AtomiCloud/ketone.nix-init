@@ -1,10 +1,10 @@
-{ pkgs, atomi, pkgs-2505, pkgs-unstable }:
+{ pkgs, atomi, pkgs-2511, pkgs-unstable }:
 let
   all = rec {
     atomipkgs = (
       with atomi;
       rec {
-        dotnetlint = atomi.dotnetlint.override { dotnetPackage = nix-2505.dotnet; };
+        dotnetlint = atomi.dotnetlint.override { dotnetPackage = nix-2511.dotnet; };
         /*
         <%= if (infra) { %>
         */
@@ -32,8 +32,8 @@ let
       with pkgs-unstable;
       { }
     );
-    nix-2505 = (
-      with pkgs-2505;
+    nix-2511 = (
+      with pkgs-2511;
       {
         dotnet = dotnet-sdk;
         inherit
@@ -52,7 +52,7 @@ let
   };
 in
 with all;
-nix-2505 //
+nix-2511 //
 nix-unstable //
 atomipkgs
 
