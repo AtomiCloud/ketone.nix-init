@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.0.0...v1.1.0) (2026-02-01)
+
+
+### ✨ Features ✨
+
+* upgrade to 25.11 ([d9da817](https://github.com/AtomiCloud/ketone.nix-init/commit/d9da81701b7086ca81d06602843a4f91cc891983))
+
 ## 1.0.0 (2025-09-20)
 
 
