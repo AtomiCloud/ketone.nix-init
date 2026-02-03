@@ -1,3 +1,15 @@
+## [1.3.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.2.0...v1.3.0) (2026-02-03)
+
+
+### ✨ Features ✨
+
+* self-used nix skill ([a718aad](https://github.com/AtomiCloud/ketone.nix-init/commit/a718aadee47f99c259a1f389100976f0d0b093ee))
+
+
+### 🐛 Bug Fixes 🐛
+
+* remove leftover docs ([7a3660d](https://github.com/AtomiCloud/ketone.nix-init/commit/7a3660d74bcadee3c4886bb674146b653902a384))
+
 ## [1.2.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.1.0...v1.2.0) (2026-02-03)
 
 
