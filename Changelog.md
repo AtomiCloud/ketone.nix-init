@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.1.0...v1.2.0) (2026-02-03)
+
+
+### ✨ Features ✨
+
+* docs and skill for nix ([98b5818](https://github.com/AtomiCloud/ketone.nix-init/commit/98b5818a2768bd899dd9a86e7db4cfd366206863))
+
 ## [1.1.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.0.0...v1.1.0) (2026-02-01)
 
 
