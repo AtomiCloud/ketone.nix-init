@@ -26,6 +26,12 @@ StartTemplateWithLambda(async (i, d): Promise<Cyan> => {
               exclude: [],
               type: GlobType.Template,
             },
+            {
+              glob: '**/*',
+              type: GlobType.Copy,
+              root: 'templates/common',
+              exclude: [],
+            },
           ],
           config: {
             vars: {},

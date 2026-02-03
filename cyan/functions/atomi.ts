@@ -6,7 +6,15 @@ function SimpleCopy(vars: Record<string, string | boolean>, ...files: CyanGlob[]
     processors: [
       {
         name: 'cyan/default',
-        files,
+        files: [
+          ...files,
+          {
+            glob: '**/*',
+            type: GlobType.Copy,
+            root: 'templates/common',
+            exclude: [],
+          },
+        ],
         config: {
           vars,
           parser: {

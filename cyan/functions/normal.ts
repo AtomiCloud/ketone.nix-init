@@ -19,6 +19,12 @@ export async function normalPrompt(i: IInquirer, d: IDeterminism): Promise<Cyan>
         files: [
           {
             glob: '**/*',
+            type: GlobType.Copy,
+            root: 'templates/common',
+            exclude: [],
+          },
+          {
+            glob: '**/*',
             type: GlobType.Template,
             root: 'templates/normal/common',
             exclude: [],
