@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.3.0...v1.4.0) (2026-02-04)
+
+
+### ✨ Features ✨
+
+* add ts lang server, go ts lang server and go deadcode tool ([5585052](https://github.com/AtomiCloud/ketone.nix-init/commit/558505274d6fb0a0973374173a23e130603db92f))
+
 ## [1.3.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.2.0...v1.3.0) (2026-02-03)
 
 
