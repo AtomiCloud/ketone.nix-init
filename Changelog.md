@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.4.0...v1.5.0) (2026-02-04)
+
+
+### ✨ Features ✨
+
+* migrate to deadcode for go ([cadf471](https://github.com/AtomiCloud/ketone.nix-init/commit/cadf471e36f2e32d5d43018bf8ee710ff060dc88))
+
 ## [1.4.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.3.0...v1.4.0) (2026-02-04)
 
 
