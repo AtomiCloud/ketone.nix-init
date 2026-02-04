@@ -54,6 +54,16 @@ pre-commit-lib.run {
       stages = [ "commit-msg" ];
     };
 
+    a-deadcode = {
+      enable = true;
+      name = "Deadcode";
+      description = "Detect unused files, dependencies, and methods";
+      entry = "${packages.deadcode}/bin/deadcode ./...";
+      language = "system";
+      pass_filenames = false;
+    };
+
+
 
     a-enforce-gitlint = {
       enable = true;

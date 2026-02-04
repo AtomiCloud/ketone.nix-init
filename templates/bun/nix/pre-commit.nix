@@ -82,6 +82,15 @@ pre-commit-lib.run {
       pass_filenames = true;
     };
 
+    a-deadcode = {
+      enable = true;
+      name = "Deadcode Knip";
+      description = "Detect unused files, dependencies, and exports";
+      entry = "${packages.bun}/bin/bun knip";
+      language = "system";
+      pass_filenames = false;
+    };
+
     /*
       <%= if (infra) { %>
     */
