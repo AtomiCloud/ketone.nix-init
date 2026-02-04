@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.5.0...v1.6.0) (2026-02-04)
+
+
+### ✨ Features ✨
+
+* deadcode check for go and bun ([74a7659](https://github.com/AtomiCloud/ketone.nix-init/commit/74a7659f44361c4bbd2717fb2a42cfddab4e4393))
+
 ## [1.5.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.4.0...v1.5.0) (2026-02-04)
 
 
