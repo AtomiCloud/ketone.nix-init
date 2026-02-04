@@ -43,7 +43,7 @@ let
           treefmt
           gitlint
           shellcheck
-          gotools
+          deadcode
           gopls
 
           #language

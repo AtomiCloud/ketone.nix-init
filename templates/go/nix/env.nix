@@ -27,7 +27,6 @@ with packages;
     gcc
     go
     infisical
-    gotools
   ];
 
   lint = [
@@ -38,6 +37,7 @@ with packages;
     sg
 
     golangci-lint
+    deadcode
 
     /*
       <%= if (infra) { %>
