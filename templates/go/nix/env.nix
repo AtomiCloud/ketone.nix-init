@@ -9,6 +9,7 @@ with packages;
     pls
     git
     air
+    gopls
   ];
 
   /*
@@ -26,6 +27,7 @@ with packages;
     gcc
     go
     infisical
+    gotools
   ];
 
   lint = [

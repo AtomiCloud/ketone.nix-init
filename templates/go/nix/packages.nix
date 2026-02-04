@@ -43,6 +43,8 @@ let
           treefmt
           gitlint
           shellcheck
+          gotools
+          gopls
 
           #language
           gcc
