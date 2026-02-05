@@ -36,7 +36,7 @@ let
     nix-2511 = (
       with pkgs-2511;
       {
-        dotnet = dotnet-sdk-10;
+        dotnet = dotnet-sdk_10;
         inherit
 
           # standard
