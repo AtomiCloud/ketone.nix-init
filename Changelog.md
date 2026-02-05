@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.7.0...v1.8.0) (2026-02-05)
+
+
+### ✨ Features ✨
+
+* allow --no-build flag to speed up resharp lints ([f7d63cf](https://github.com/AtomiCloud/ketone.nix-init/commit/f7d63cfd2f2fa0ea18b0c15f1d2d46326b0f2c26))
+
 ## [1.7.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.6.0...v1.7.0) (2026-02-05)
 
 
