@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.8.0...v1.8.1) (2026-02-05)
+
+
+### 🐛 Bug Fixes 🐛
+
+* incorrect dotnet-sdk ([58e55d3](https://github.com/AtomiCloud/ketone.nix-init/commit/58e55d39805e55046129d4d8a147f6b6985f0d15))
+
 ## [1.8.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.7.0...v1.8.0) (2026-02-05)
 
 
