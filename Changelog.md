@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.6.0...v1.7.0) (2026-02-05)
+
+
+### ✨ Features ✨
+
+* dn-inspect for deadcode ([122de6e](https://github.com/AtomiCloud/ketone.nix-init/commit/122de6e7fdce47ef14fbe8de6ca8ee40bddd05ba))
+
 ## [1.6.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.5.0...v1.6.0) (2026-02-04)
 
 
