@@ -31,7 +31,7 @@ pre-commit-lib.run {
       enable = true;
       name = "Lint .NET with re-sharper";
       description = "Run linter for .NET Projects with resharper";
-      entry = "${packages.dn-inspect}/bin/dn-inspect";
+      entry = "${packages.dn-inspect}/bin/dn-inspect --no-build";
       language = "system";
       pass_filenames = false;
       files = "^.*\\.cs$";
@@ -41,7 +41,7 @@ pre-commit-lib.run {
       enable = true;
       name = "Check for deadcode";
       description = "Check with deadcode ";
-      entry = "${packages.dn-inspect}/bin/dn-inspect --projects ./App --projects ./Domain --filter Unused";
+      entry = "${packages.dn-inspect}/bin/dn-inspect --projects ./App --projects ./Domain --filter Unused --no-build";
       language = "system";
       pass_filenames = false;
       files = "^.*\\.cs$";
