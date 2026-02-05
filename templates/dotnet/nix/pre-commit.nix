@@ -20,12 +20,33 @@ pre-commit-lib.run {
     a-dotnet-lint = {
       enable = true;
       name = "Lint .NET";
-      description = "Run linter for .NET Projects'";
+      description = "Run linter for .NET Projects";
       entry = "${packages.dotnetlint}/bin/dotnetlint";
       language = "system";
       pass_filenames = false;
       files = "^.*\\.cs$";
     };
+
+    a-resharper-lint = {
+      enable = true;
+      name = "Lint .NET with re-sharper";
+      description = "Run linter for .NET Projects with resharper";
+      entry = "${packages.dn-inspect}/bin/dn-inspect";
+      language = "system";
+      pass_filenames = false;
+      files = "^.*\\.cs$";
+    };
+
+    a-deadcode = {
+      enable = true;
+      name = "Check for deadcode";
+      description = "Check with deadcode ";
+      entry = "${packages.dn-inspect}/bin/dn-inspect --projects ./App --projects ./Domain --filter Unused";
+      language = "system";
+      pass_filenames = false;
+      files = "^.*\\.cs$";
+    };
+
 
     a-infisical = {
       enable = true;

@@ -23,6 +23,7 @@ let
           /*
           <%= } %>
           */
+          dn-inspect
           atomiutils
           sg
           pls;
@@ -35,7 +36,7 @@ let
     nix-2511 = (
       with pkgs-2511;
       {
-        dotnet = dotnet-sdk;
+        dotnet = dotnet-sdk-10;
         inherit
 
           # standard

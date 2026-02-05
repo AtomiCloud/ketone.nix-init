@@ -32,6 +32,7 @@ with packages;
     gitlint
     shellcheck
     sg
+    dn-inspect
     /*
       <%= if (infra) { %>
     */
