@@ -1,3 +1,10 @@
+## [1.9.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.8.1...v1.9.0) (2026-02-10)
+
+
+### ✨ Features ✨
+
+* migrate to fully qualified name for nixpkgs pins ([13bfbd5](https://github.com/AtomiCloud/ketone.nix-init/commit/13bfbd5052d729c5676a49b1080f3d1ab33ee6c2))
+
 ## [1.8.1](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.8.0...v1.8.1) (2026-02-05)
 
 
