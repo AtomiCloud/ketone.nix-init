@@ -5,8 +5,8 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # registry
-    nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
-    nixpkgs-2511.url = "nixpkgs/nixos-25.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-2511.url = "github:NixOS/nixpkgs/nixos-25.11";
     atomipkgs.url = "github:AtomiCloud/nix-registry/v2";
   };
   outputs =
