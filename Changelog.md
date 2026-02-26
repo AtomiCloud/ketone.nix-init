@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.9.0...v1.10.0) (2026-02-26)
+
+
+### ✨ Features ✨
+
+* enable markdownlint ([173c829](https://github.com/AtomiCloud/ketone.nix-init/commit/173c829b22d1fe5bc46377c3fe06dbd4e3007fec))
+
 ## [1.9.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.8.1...v1.9.0) (2026-02-10)
 
 
