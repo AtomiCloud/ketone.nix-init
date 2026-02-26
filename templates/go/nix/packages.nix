@@ -45,6 +45,7 @@ let
           shellcheck
           deadcode
           gopls
+          markdownlint-cli2
 
           #language
           gcc

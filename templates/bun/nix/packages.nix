@@ -44,6 +44,7 @@ let
           gitlint
           shellcheck
           biome
+          markdownlint-cli2
 
           # language
           bun

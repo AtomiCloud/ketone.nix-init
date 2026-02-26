@@ -24,6 +24,7 @@ let
           treefmt
           gitlint
           shellcheck
+          markdownlint-cli2
           ;
       }
     );
