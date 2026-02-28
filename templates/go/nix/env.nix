@@ -12,16 +12,11 @@ with packages;
     gopls
   ];
 
-  /*
-    <%= if (infra) { %>
-  */
+  # <%= if (infra) { %>
   infra = [
     infrautils
   ];
-  /*
-    <%= } %>
-  */
-
+  # <%= } %>
 
   main = [
     gcc
@@ -37,16 +32,12 @@ with packages;
     sg
 
     golangci-lint
-    deadcode
+    gotools
 
-    /*
-      <%= if (infra) { %>
-    */
+    # <%= if (infra) { %>
     infralint
     helmlint
-    /*
-      <%= } %>
-    */
+    # <%= } %>
   ];
 
   releaser = [

@@ -1,36 +1,31 @@
-{ pkgs, atomi, pkgs-2511, pkgs-unstable }:
+{ pkgs
+, atomi
+, pkgs-2511
+, pkgs-unstable
+,
+}:
 let
   all = rec {
     atomipkgs = (
       with atomi;
       rec {
-        /*
-        <%= if (infra) { %>
-        */
+        # <%= if (infra) { %>
         helmlint = atomi.helmlint.override { helmPackage = infrautils; };
-        /*
-        <%= } %>
-        */
+        # <%= } %>
         inherit
 
-          /*
-          <%= if (infra) { %>
-          */
+          # <%= if (infra) { %>
           #infra
           infrautils
           infralint
-          /*
-          <%= } %>
-          */
+          # <%= } %>
           atomiutils
           sg
-          pls;
+          pls
+          ;
       }
     );
-    nix-unstable = (
-      with pkgs-unstable;
-      { }
-    );
+    nix-unstable = (with pkgs-unstable; { });
     nix-2511 = (
       with pkgs-2511;
       {
@@ -43,7 +38,7 @@ let
           treefmt
           gitlint
           shellcheck
-          deadcode
+          gotools
           gopls
           markdownlint-cli2
 
@@ -59,7 +54,4 @@ let
   };
 in
 with all;
-nix-2511 //
-nix-unstable //
-atomipkgs
-
+nix-2511 // nix-unstable // atomipkgs
