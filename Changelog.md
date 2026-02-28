@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.10.1...v1.10.2) (2026-02-28)
+
+
+### 🐛 Bug Fixes 🐛
+
+* incorrect pre-commit for go deadcode ([9587f48](https://github.com/AtomiCloud/ketone.nix-init/commit/9587f4859f05a8078923049362a7d7c038f3257b))
+
 ## [1.10.1](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.10.0...v1.10.1) (2026-02-28)
 
 
