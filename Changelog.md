@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.10.0...v1.10.1) (2026-02-28)
+
+
+### 🐛 Bug Fixes 🐛
+
+* incorrect gotools ([27e3a5b](https://github.com/AtomiCloud/ketone.nix-init/commit/27e3a5b124d99038ed428f85e9b6433bb8ef4f9c))
+
 ## [1.10.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.9.0...v1.10.0) (2026-02-26)
 
 
