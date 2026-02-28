@@ -31,7 +31,6 @@ let
 
           treefmt
           shellcheck
-          markdownlint-cli2
           ;
       }
     );
