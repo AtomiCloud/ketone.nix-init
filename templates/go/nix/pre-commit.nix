@@ -1,4 +1,8 @@
-{ formatter, pre-commit-lib, packages }:
+{ formatter
+, pre-commit-lib
+, packages
+,
+}:
 pre-commit-lib.run {
   src = ./.;
 
@@ -15,7 +19,7 @@ pre-commit-lib.run {
     # linters From https://github.com/cachix/pre-commit-hooks.nix
     shellcheck.enable = false;
 
-    # custom precommits 
+    # custom precommits
     a-infisical = {
       enable = true;
       name = "Secrets Scanning (Past Commits)";
@@ -58,12 +62,10 @@ pre-commit-lib.run {
       enable = true;
       name = "Deadcode";
       description = "Detect unused files, dependencies, and methods";
-      entry = "${packages.deadcode}/bin/deadcode ./...";
+      entry = "${packages.gotools}/bin/deadcode ./...";
       language = "system";
       pass_filenames = false;
     };
-
-
 
     a-enforce-gitlint = {
       enable = true;
@@ -93,9 +95,7 @@ pre-commit-lib.run {
       pass_filenames = true;
     };
 
-    /*
-      <%= if (infra) { %>
-    */
+    # <%= if (infra) { %>
     a-hadolint = {
       enable = true;
       name = "Docker Linter";
@@ -123,9 +123,7 @@ pre-commit-lib.run {
       language = "system";
       pass_filenames = false;
     };
-    /*
-      <%= } %>
-    */
+    # <%= } %>
 
     a-markdownlint = {
       enable = true;
