@@ -1,3 +1,20 @@
+## [1.11.0](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.10.2...v1.11.0) (2026-02-28)
+
+
+### ✨ Features ✨
+
+* remove markdownlint ([28afee3](https://github.com/AtomiCloud/ketone.nix-init/commit/28afee396071f10659d937c719f871b41b45a4a6))
+
+
+### 🐛 Bug Fixes 🐛
+
+* pre-commit ([923c019](https://github.com/AtomiCloud/ketone.nix-init/commit/923c019b49ec4addeb8aa94da790cdc611ed2bd3))
+
+
+### 🔼 Dependency Upstreams 🔼
+
+* update nix-init ([41ae66b](https://github.com/AtomiCloud/ketone.nix-init/commit/41ae66bef54c26fa57f397e34c9f65867d0de46f))
+
 ## [1.10.2](https://github.com/AtomiCloud/ketone.nix-init/compare/v1.10.1...v1.10.2) (2026-02-28)
 
 
