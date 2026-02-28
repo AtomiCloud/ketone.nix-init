@@ -27,9 +27,11 @@ let
           infisical
           bun
           biome
+          typescript-language-server
 
           treefmt
           shellcheck
+          markdownlint-cli2
           ;
       }
     );
