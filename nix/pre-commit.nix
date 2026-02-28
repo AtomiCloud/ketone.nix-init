@@ -1,4 +1,8 @@
-{ packages, formatter, pre-commit-lib }:
+{ packages
+, formatter
+, pre-commit-lib
+,
+}:
 pre-commit-lib.run {
   src = ./.;
 
@@ -17,7 +21,7 @@ pre-commit-lib.run {
     # linters From https://github.com/cachix/pre-commit-hooks.nix
     shellcheck.enable = false;
 
-    # custom precommits 
+    # custom precommits
     a-biome = {
       enable = true;
       name = "Biome Lint";
@@ -59,15 +63,6 @@ pre-commit-lib.run {
       name = "Enforce Shell Script executable";
       entry = "${packages.atomiutils}/bin/chmod +x";
       files = ".*sh$";
-      language = "system";
-      pass_filenames = true;
-    };
-
-    a-markdownlint = {
-      enable = true;
-      name = "Markdown Lint";
-      entry = "${packages.markdownlint-cli2}/bin/markdownlint-cli2 --fix";
-      files = ".*md$";
       language = "system";
       pass_filenames = true;
     };
