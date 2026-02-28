@@ -63,14 +63,5 @@ pre-commit-lib.run {
       pass_filenames = true;
     };
 
-    a-markdownlint = {
-      enable = true;
-      name = "Markdown Lint";
-      entry = "${packages.markdownlint-cli2}/bin/markdownlint-cli2 --fix";
-      files = ".*md$";
-      language = "system";
-      pass_filenames = true;
-    };
-
   };
 }

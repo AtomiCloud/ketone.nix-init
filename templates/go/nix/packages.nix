@@ -40,7 +40,6 @@ let
           shellcheck
           gotools
           gopls
-          markdownlint-cli2
 
           #language
           gcc
